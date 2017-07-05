@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pdg.moodlamp.SetOffTImeActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/nightbg">
+<!--시 분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:hint="24시간 형식"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:id="@+id/offTime"
+            />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="100dp"
+            android:text=":"
+            android:textSize="25dp"
+            android:background="#FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:hint="분"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:id="@+id/offMinute"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="종료 시간 설정"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:id="@+id/setOffTime"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="뒤로 가기"
+        android:id="@+id/back_BT2"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        />
+</LinearLayout>

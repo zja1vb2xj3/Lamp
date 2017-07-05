@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.example.pdg.moodlamp.MainActivity"
+    android:background="@drawable/nightbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/night_img"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="블루투스 연결"
+            android:id="@+id/connectButtonClick"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="무드 등 사용"
+            android:id="@+id/use_lamp"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="종료 시간 설정"
+            android:id="@+id/set_offtime"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
